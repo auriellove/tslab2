@@ -11,4 +11,14 @@ describe("new greeter class", () => {
 
         expect(overRide).toBe("console.log(Hello Auriel!)");
     })
+
+    test("", () => {
+        const greeting = "Bye";
+        const name = "Felicia";
+        const Greeter = new JavaScriptGreeter(greeting);
+        const overRide = Greeter.greet(name);
+        
+
+        expect(overRide).toBe("console.log(Bye Felicia!)");
+    })
 })
